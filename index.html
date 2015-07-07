@@ -31,18 +31,17 @@
           <h3>
 <a id="the-idea" class="anchor" href="#the-idea" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Idea</h3>
 
-<p>Wrapping up <a href="http://user2015.math.aau.dk">useR2015</a> in a few words: it was a fantastic conference. We met a 
-lot of wonderful open minded people, who enlarged our water research driven universe. </p>
+<p>Wrapping up <a href="http://user2015.math.aau.dk">useR2015</a> in a few words: it was a fantastic conference. We met a lot of wonderful open minded people, who enlarged our water research driven universe. </p>
 
-<p>All R users are taking advantage of the nearly infinite problems that can be solved with it in a systematic, 
-transparent and automatised way. Both, automatisation and transparency are a prerequisite for achieving the
-"gold standard": reproducible research. </p>
+<p>All R users are taking advantage of the nearly infinite problems that can be solved 
+with it in a systematic, transparent and automatised way. Both, automatisation and 
+transparency are a prerequisite for achieving the "gold standard": <a href="http://reproducible-science-curriculum.github.io/duke-techexpo2015/#/4">reproducible research</a> </p>
 
 <h3>
 <a id="the-challenge" class="anchor" href="#the-challenge" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Challenge</h3>
 
-<p><strong>Creating a centralized R knowledge hub for reproducible research</strong> for wrapping the state of the art 
-tools &amp; packages for R enabling this challenge.</p>
+<p><strong>Creating a centralized R knowledge hub for reproducible research</strong> by wrapping the state of the art 
+tools &amp; packages available for R.</p>
 
 <h3>
 <a id="what-to-do" class="anchor" href="#what-to-do" aria-hidden="true"><span class="octicon octicon-link"></span></a>What to do?</h3>
@@ -62,78 +61,131 @@ tools &amp; packages for R enabling this challenge.</p>
 <p><strong>1. Data</strong></p>
 
 <ul>
-<li>Import: getting different file formats, DBs &amp; Web data into the R universe</li>
-<li>Preparation: cleaning, aggregating</li>
+<li>Import: getting different file formats, data bases &amp; Web data (e.g. Twitter, Facebook) 
+into the R universe</li>
+<li>Preparation: cleaning, aggregatiion</li>
 <li>Analysis: graphical visualisation</li>
 </ul>
 
+<p><strong>Something missing? Please add it in the markdown document "index.md" on</strong> <a href="https://github.com/DatenHelden/reproducible-research.org">Github</a></p>
+
 <p><strong>2. Modelling</strong></p>
 
-<p>Examples:</p>
+<p><strong>Proposed methodology:</strong> "Wrap your model" (conference paper by <a href="http://dx.doi.org/10.13140/RG.2.1.2140.3683">Hauke Sonnenberg et al. 2014</a>)</p>
+
+<p><strong>Examples:</strong></p>
 
 <ul>
-<li>
-<p><a href="http://dx.doi.org/10.13140/RG.2.1.2140.3683">Wrap your model</a></p>
-
-<ul>
-<li>Machine learning: <a href="http://mlr-org.github.io/mlr-tutorial/tutorial/release/html/">mlr package</a>
-</li>
-<li>Environmental: e.g. <a href="http://kwb-r.github.io/openmodelling/">openmodelling</a>
+<li>Machine learning: <a href="http://mlr-org.github.io/mlr-tutorial/tutorial/release/html/">mlr package</a> </li>
+<li>Environmental: e.g. <a href="http://kwb-r.github.io/openmodelling/">openmodelling</a> by <a href="https://github.com/KWB-R">Kompetenzzentrum Wasser Berlin gGmbH</a>
 </li>
 </ul>
-</li>
-<li><p>do you have some more?</p></li>
-</ul>
 
-<p>Usual workflow:</p>
+<p><strong>Something missing? Please add it on</strong> <a href="https://github.com/DatenHelden/reproducible-research.org">Github</a></p>
 
-<ul>
-<li>Parameterise</li>
-<li>Run,</li>
-<li>Analyse,</li>
-<li>Calibrate,</li>
-<li>Validate,</li>
-<li>Predict and .....</li>
-</ul>
+<p><strong>Usual workflow:</strong>
+1. Parameterise
+2. Run,
+3. Analyse,
+4. Calibrate,
+5. Validate,
+6. Predict and .....</p>
 
 <p><strong>3. Document</strong></p>
 
-<p>your results (automatically).</p>
+<p>your results (automatically, e.g. by using R package <a href="http://rmarkdown.rstudio.com">rmarkdown</a> by <a href="http://rstudio.com">RStudio</a>). </p>
 
 <p><strong>4. Deployment</strong>: </p>
 
 <ul>
-<li> Web-based or stand-alone, </li>
-<li> Development or production, </li>
-<li> in case of production: does the used tool scale without being too expensive?</li>
+<li> Web-based or stand-alone?, </li>
+<li> Development or production?, </li>
+<li> In case of production: does your used tool scale without being too expensive (i.e. price is independent to the number of connected users?)</li>
+</ul>
+
+<p><strong>Tools:</strong> </p>
+
+<ul>
+<li>
+<a href="http://shiny.rstudio.com">Shiny</a>,</li>
+<li>
+<a href="http://opencpu.org">R API "OpenCpu Project</a>, ... </li>
 </ul>
 
 <p><strong>5. Additional topics</strong>: </p>
 
 <ul>
-<li><p>Crowdsourcing: e.g. <a href="http://ohmage.org/">Ohmage</a></p></li>
+<li><p>Crowdsourcing: e.g. <a href="http://www.ohmage.org/">Ohmage</a> as open-source framework for data collection, analysis (using R) and ready-to-use apps (for iPhone, Android) based on user defined surveys (<a href="http://www.stat.ucla.edu/%7Ejeroen/med2/#/step-1">Slides</a> &amp; interactive examples <a href="http://jeroenooms.github.io/dashboard/snack/">Snack</a>, <a href="http://jeroenooms.github.io/dashboard/media/">Advertisement</a> by <a href="https://jeroenooms.github.io/">Jeroeen Ooms</a></p></li>
 <li>
 <p>Learning:</p>
 
 <ul>
-<li>OpenBooks: e.g. statistics <a href="openintro.org">OpenIntro</a>, ....</li>
-<li>Training: <a href="http://datacamp.com">DataCamp</a>
-</li>
+<li><p>OpenBooks: e.g. statistics by <a href="http://www.openintro.org">OpenIntro</a>; R: <a href="http://adv-r.had.co.nz/">Advanced R</a> &amp; <a href="http://r-pkgs.had.co.nz/">R packages</a> by <a href="http://had.co.nz/">Hadley Wickham</a>, ....</p></li>
+<li><p>Training: <a href="http://www.datacamp.com">DataCamp</a></p></li>
 </ul>
 </li>
 </ul>
-
-<p>Missed some? Please help us!!!</p>
 
 <h3>
 <a id="who" class="anchor" href="#who" aria-hidden="true"><span class="octicon octicon-link"></span></a>Who?</h3>
 
-<p>Every member of the R community is invited to contribute!</p>
+<p>Something is missing? Please help us in improving the concept by contributing to the project by adding the missing things them in the markdown document "index.md" on <a href="https://github.com/DatenHelden/reproducible-research.org">Github</a>.</p>
 
 <h3>
 <a id="when" class="anchor" href="#when" aria-hidden="true"><span class="octicon octicon-link"></span></a>When?</h3>
 
-<p>Quality of the recommendations should always be the major objective.</p>
+<p>There is no clear deadline for the tasks listed in the proposed project roadmap listed below. However, the idea is to complete the "design phase" until end of December 2015.</p>
+
+<p><strong>Proposed Roadmap:</strong>
+1) Concept phase
+1 A) Structure the R knowledge according to topics and subtopics (e.g. modelling, data input, ...)</p>
+
+<p>1 B) Identifying the best tools for each topic by using a community driven evaluation (e.g. standardised questionaire to each package developer based on topics e.g. "visualisation" -&gt; results could be send to offer package developers on same topic for cross-evaluation -&gt; best on received feedback a TOP list could be generated helping new user to immediately use the best available packages)</p>
+
+<p>2) Design phase </p>
+
+<p>After completing the concept phase the design phase should start making the website look as professional as e.g. <a href="http://www.rstudio.com">Rstudio</a> but so flexible so that the community can add topics easily (i.e. by modifying markdown files) for each webpage on <a href="https://github.com/DatenHelden/reproducible-research.org">GitHub</a></p>
+
+<p>Want do you think about it? I would really love to receive your comments &amp; feedback on <a href="https://github.com/DatenHelden/reproducible-research.org">GitHub</a>.</p>
+
+<h3>
+<a id="faq" class="anchor" href="#faq" aria-hidden="true"><span class="octicon octicon-link"></span></a>FAQ</h3>
+
+<h3>
+<a id="how-do-i-know-that-an-r-toolpackage-is-of-high-functional-quality" class="anchor" href="#how-do-i-know-that-an-r-toolpackage-is-of-high-functional-quality" aria-hidden="true"><span class="octicon octicon-link"></span></a>How do I know that an R tool/package is of high "functional" quality?</h3>
+
+<p><strong>How can a separate "functional" well designed tools from "conventional" tools?</strong>. 
+We define "conventional tools" in this context as tools that are well-kown (often because they is a company behind it with big money and a marketing strategy behind). An example of such an tools is for example <a href="http://shiny.rstudio.com">shiny</a>, which is used for interactive web applications in R. Such tools are sometimes useful e.g. for rapid protypeing. However, such tools should always critically reviewed concerning their efficiency to be used in a production based context (e.g. scalable web-based software-as-a-service products) in terms of: </p>
+
+<ul>
+<li>Money: does your used tool scale without being too expensive (i.e. price is independent to the number of connected users?)</li>
+<li>Time: are there additional skills required by the R user? Or would it be possible to outsource the graphical user interface (GUI) development to a professional web developer?</li>
+<li>Useability: how complex can the web interface be considering time &amp; money constraints?</li>
+</ul>
+
+<p>In a production based context, which requires scalable solutions the <a href="http://opencpu.org">R API OpenCpu Project</a> by <a href="https://jeroenooms.github.io/">Jeroeem Ooms</a>
+is "functionally" superior to the "conventional" <a href="http://shiny.rstudio.com">shiny</a> approach because its: </p>
+
+<ul>
+<li>Free-of-charge for infinite number of users while <a href="http://www.rstudio.com/pricing/">shiny costs 9995$ for 20 concurrent users per year</a>
+</li>
+<li>No need to learn the "reactive" shiny programming language on top of R<br>
+</li>
+<li>Enables the separation of web based GUI development from R package development </li>
+</ul>
+
+<p><strong>Questions to be answered by yourself:</strong></p>
+
+<ul>
+<li>Do you want to be completely responsible for the GUI development? Or wouldn`t it be better (in terms of money, time &amp; useability) to outsource this task (e.g. by contracting a professional web designer) and using the <a href="http://opencpu.org">R API</a> by <a href="https://jeroenooms.github.io/">Jeroeen Ooms</a>?</li>
+<li>Is the level of website complexity you could do with <a href="http://shiny.rstudio.com">shiny</a> sufficient for your problem at hand? And if yes: are you sure that your web tool will be used <strong>forever</strong> (!) only by a small amount of people concurrently? If you answered both questions before with "yes" then <strong>shiny</strong> might be an option for you! <strong>If not: use the <a href="http://opencpu.org">R API</a> for your web app!</strong>
+</li>
+</ul>
+
+<h3>
+<a id="add-your-questions-here" class="anchor" href="#add-your-questions-here" aria-hidden="true"><span class="octicon octicon-link"></span></a>Add your questions here!</h3>
+
+<p>For adding your FAQ-questions add them in the markdown document "index.md" on <a href="https://github.com/DatenHelden/reproducible-research.org">Github</a></p>
         </section>
 
         <aside id="sidebar">
